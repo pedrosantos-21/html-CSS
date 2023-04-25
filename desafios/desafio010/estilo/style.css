@@ -25,7 +25,7 @@
 }
 body{
     background-color: var(--cor0);
-    font-family: var(--fonte-android);
+    font-family: var(--fonte-padrao);
     margin: center;
 }
 .externo::after{
