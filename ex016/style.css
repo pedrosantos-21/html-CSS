@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+ *{
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: linear-gradient(to right,#e79160,#FFC991);
+}
+main{
+
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #475a39;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    /*o primeiro parâmetro é quanto essa sombra vai andar para o lado,
+     o segundo parâmetro é o qnt essa sombra vai andar para baixo,
+     o Terceiro é quanto essa sombra vai espalhar e 
+     o último parâmetro é qnt essa sombra vai ter de transparência*/ 
+}
+h1{
+ color: #8CA07D;
+ text-align: center;
+ text-shadow: 1px 1px 2px #8CA07d ;
+}
+h2{
+color: #C4D1CA;
+}
+
+p{
+    text-align: justify;
+}
