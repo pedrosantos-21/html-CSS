@@ -96,7 +96,7 @@ main h1{
 main h2{
     font-family: var(--fonte-android);
     color: var(--cor4);
-    background-image: linear-gradient(to right,var(--cor1),transparent) ;
+    background-image: linear-gradient(to right,var(--cor1),transparent) ;/*para dar o degradê*/
     font-size:1.3em;
     text-indent: 10px;
     font-weight: normal;
