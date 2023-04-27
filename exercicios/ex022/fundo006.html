@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de imagens de fundo</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
-            height: 100vh;
+            height: 100vh;/*delimita a altura vista*/
             background-color: #000000;
             background-image: url(imagens/wallpaper002.jpg);
             background-position:center top;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: cover;/*para alterar o tamanho da imagem (cover é o mais recomendado)*/
+            background-attachment: fixed; /*Vinculo(usado para fixar a imagem)*/
+
+            /*shorthand - background
+            color > image > positionx > repeat > [size] > attachment*/
+
+            background: black url(imagens/wallpaper003.jpg) center top no-repeat cover fixed ; 
         }
         main{
             background-color: white;
@@ -28,6 +34,14 @@
     <main>
         <h1>Teste de imagens de fundo</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus ratione magnam ullam, totam corrupti corporis dicta ad sapiente in, natus incidunt sint nisi quaerat, temporibus quibusdam enim eos autem? Illum?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus ratione magnam ullam, totam corrupti corporis dicta ad sapiente in, natus incidunt sint nisi quaerat, temporibus quibusdam enim eos autem? Illum?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus ratione magnam ullam, totam corrupti corporis dicta ad sapiente in, natus incidunt sint nisi quaerat, temporibus quibusdam enim eos autem? Illum?</p><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus ratione magnam ullam, totam corrupti corporis dicta ad sapiente in, natus incidunt sint nisi quaerat, temporibus quibusdam enim eos autem? Illum?</p><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus ratione magnam ullam, totam corrupti corporis dicta ad sapiente in, natus incidunt sint nisi quaerat, temporibus quibusdam enim eos autem? Illum?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus ratione magnam ullam, totam corrupti corporis dicta ad sapiente in, natus incidunt sint nisi quaerat, temporibus quibusdam enim eos autem? Illum?</p>
+    </main>
+    </main>
+    </main>
+    </main>
+    </main>
     </main>
 </body>
 </html>
