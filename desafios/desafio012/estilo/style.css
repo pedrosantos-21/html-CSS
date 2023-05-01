@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+*{
+    margin:0px;
+    padding: 0px;
+
+}
+body{
+    background-image: url();
+}
+header{
+    background-color: black;
+    text-align: center;
+    padding-top: 20px;
+}
+header > h1{
+    color: white;
+}
+
+main{
+    background-color: white;
+    min-height: 200px;
+}
