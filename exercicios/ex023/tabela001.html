@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+        }
+        td{
+            border: 2px solid black;
+            padding: 8px;
+            box-shadow: 1px 1px 1px black;
+        }
+        td.dado1{
+            background-color: yellow;
+        }
+        .dado2{
+            background-color: brown;
+        }
+        tr.linha{
+            background-color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--HIERARQUIA DE TABELAS (simples)
+        TABLE = tabela
+            TABLE ROW = linha de tabela
+                TABLE HEADER = cabeçario de tabela
+                TABLE DATA = dado de tabela
+                [NÃO É NECESSARIO O FECHAMENTO DA TAG]
+    -->
+    <table>
+        <tr><!--primeira linha-->
+            <td>A1</td><!--Piremeiro dado-->
+            <td>B1</td>
+            <td class="dado1">C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td class="dado2">C2</td>
+        </tr>
+        <tr class="linha">
+            <td>A3</td>
+            <td>B3</td>
+            <td class="dado1">C3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td class="dado2">C4</td>
+        </tr>
+    </table>
+</body>
+</html>
