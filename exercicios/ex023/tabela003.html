@@ -12,6 +12,7 @@
         table{
             width: 400px;
             border-collapse: collapse;
+            position: relative;
 
         }
         td , th{
@@ -22,8 +23,21 @@
             background-color: darkgray;
             color: white;
         }
+        thead > tr >th {
+            background-color: darkgray;
+            top: 0;
+            position: sticky;
+        }
         td:nth-child(2) {
             text-align: right;
+        }
+        tbody > tr:nth-child(odd){ /* 2n - 1 */
+            background-color: lightblue;
+            text-decoration: underline;
+        }
+        tbody > tr:nth-child(even){ /* 2n */
+            background-color: white;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -32,6 +46,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION (legenda)
             THEAD
                 TR, TD, TH 
             TBODY
@@ -39,19 +54,18 @@
             TFOOT
                 TR, TD, TH
     -->
-</body>
     <table>
+        <caption>População das unidades Federativas</caption>
         <thead>
             <tr>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>São Paulo</td>
                 <td>46 024 937</td>
-                <td> girrafas</td>
             </tr>
             <tr>
                 <td> Minas Gerais</td>
@@ -120,9 +134,12 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td>00000</td>
             </tr>
         </tfoot>
     </table>
+</body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem illo ullam nihil ad deleniti quisquam libero nam quasi modi, facere nesciunt excepturi molestiae ut quae recusandae, ex aperiam iste pariatur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem illo ullam nihil ad deleniti quisquam libero nam quasi modi, facere nesciunt excepturi molestiae ut quae recusandae, ex aperiam iste pariatur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem illo ullam nihil ad deleniti quisquam libero nam quasi modi, facere nesciunt excepturi molestiae ut quae recusandae, ex aperiam iste pariatur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem illo ullam nihil ad deleniti quisquam libero nam quasi modi, facere nesciunt excepturi molestiae ut quae recusandae, ex aperiam iste pariatur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem illo ullam nihil ad deleniti quisquam libero nam quasi modi, facere nesciunt excepturi molestiae ut quae recusandae, ex aperiam iste pariatur.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem illo ullam nihil ad deleniti quisquam libero nam quasi modi, facere nesciunt excepturi molestiae ut quae recusandae, ex aperiam iste pariatur.</p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui amet accusantium similique esse, error perspiciatis magnam ipsum vel beatae, saepe officiis laudantium dignissimos, nisi distinctio soluta quis velit possimus. Dicta!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem illo ullam nihil ad deleniti quisquam libero nam quasi modi, facere nesciunt excepturi molestiae ut quae recusandae, ex aperiam iste pariatur.
 </html>
