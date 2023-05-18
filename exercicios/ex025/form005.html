@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        pre{
+            white-space: pre-line;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos de formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            
+            <pre>
+                <legend>Sexo</legend>
+                <input type="radio" name="sexo" id="isxmas"><label for="isxmas">Masculino</label><!--Em botões de radio,Ultilizei a mesma TagName para ter a opção de remarcar uma caixa de input-->
+                <input type="radio" name="sexo" id="isxfem" checked > <label for="isxfem">Feminino</label><!--Ultilizei checked para deixar a opção feminino já marcada no navegador!-->
+            </pre>
+
+        </fieldset>
+
+        <fieldset>
+            <pre>
+                <legend>Esportes favoritos</legend>
+                <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Futebol</label>
+                <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">basquete</label>
+                <input type="checkbox" name="esvol" id="iesvol"><label for="iesvol">volei</label>
+                <input type="checkbox" name="esnat" id="iesnat"><label for="iesnat">natação</label><!--utilizado para relacionar os forms-->
+            </pre>
+
+        </fieldset>
+        <p>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </p>
+
+    </form>
+</body>
+</html>
